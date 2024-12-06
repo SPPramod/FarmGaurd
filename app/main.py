@@ -12,8 +12,8 @@ import tempfile
 
 # Define file paths
 working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = "../model_training_notebook/model.keras"
-class_indices_path = "../model_training_notebook/class_indices.json"
+model_path = "/absolute/path/to/your/model.keras"
+class_indices_path = "../class_indices.json"
 
 # Load the pre-trained model and class indices
 model = tf.keras.models.load_model(model_path)
