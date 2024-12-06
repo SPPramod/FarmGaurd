@@ -9,6 +9,7 @@ from io import BytesIO
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 import tempfile
+import gdown
 
 # Define the model file ID from Google Drive
 google_drive_file_id = "1rKh-IElSdHTqax7XdfSdZTn-r8T_qWPf"
