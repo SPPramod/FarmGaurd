@@ -12,7 +12,7 @@ import tempfile
 
 # Define file paths
 working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = "/absolute/path/to/your/model.keras"
+model_path = "https://drive.google.com/file/d/1rKh-IElSdHTqax7XdfSdZTn-r8T_qWPf/view?usp=drive_link"
 class_indices_path = "../class_indices.json"
 
 # Load the pre-trained model and class indices
