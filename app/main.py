@@ -10,6 +10,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 import tempfile
 
+# Define the model file ID from Google Drive
 google_drive_file_id = "1rKh-IElSdHTqax7XdfSdZTn-r8T_qWPf"
 
 # Define a local path for the model
@@ -20,7 +21,7 @@ if not os.path.exists(local_model_path):
     gdown.download(f"https://drive.google.com/uc?id={google_drive_file_id}", local_model_path, quiet=False)
 
 # Load the model
-model = tf.keras.models.load_model(local_model_path))
+model = tf.keras.models.load_model(local_model_path)
 class_indices = json.load(open(class_indices_path))
 
 # Function to Load and Preprocess the Image using Pillow
