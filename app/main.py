@@ -10,13 +10,17 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 import tempfile
 
-# Define file paths
-working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = "https://drive.google.com/file/d/1rKh-IElSdHTqax7XdfSdZTn-r8T_qWPf/view?usp=drive_link"
-class_indices_path = "../class_indices.json"
+google_drive_file_id = "1rKh-IElSdHTqax7XdfSdZTn-r8T_qWPf"
 
-# Load the pre-trained model and class indices
-model = tf.keras.models.load_model(model_path)
+# Define a local path for the model
+local_model_path = "model.h5"
+
+# Check if the model is already downloaded
+if not os.path.exists(local_model_path):
+    gdown.download(f"https://drive.google.com/uc?id={google_drive_file_id}", local_model_path, quiet=False)
+
+# Load the model
+model = tf.keras.models.load_model(local_model_path))
 class_indices = json.load(open(class_indices_path))
 
 # Function to Load and Preprocess the Image using Pillow
