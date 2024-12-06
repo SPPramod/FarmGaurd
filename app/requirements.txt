@@ -1,5 +1,3 @@
-os
-PIL
 streamlit
 numpy
 tensorflow
