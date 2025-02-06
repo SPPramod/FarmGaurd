@@ -35,6 +35,13 @@ The model is trained using a dataset of plant leaf images, classified into diffe
 - Works best with clear, high-quality images
 - Performance may vary for different plant species
 
+## Contact
+
+For any inquiries or feedback, please contact:
+
+- **Sathya Pushana Pramod**: [pushanapramod@gmail.com](mailto:pushanapramod@gmail.com)
+- **GitHub**: [SPPramod](https://github.com/SPPramod)
+
 ## 🔮 Future Improvements
 - Expand dataset for more plant species
 - Improve model accuracy using ensemble learning
